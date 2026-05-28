@@ -1,12 +1,14 @@
+import youtubeLogo from '../assets/youtube-logo.png'
+
 function Card(props) {
     return (
         <div>
             <h2>{props.name}</h2>
-            <p>{props.description}</p>
             <a href={props.url} target="_blank">
-                Visit Creator
+                Visit Channel
             </a>
-            <img src={props.image} alt={props.name} />
+            <p>{props.description}</p>
+            <img src={props.imageURL} alt={props.name} width="200" height="200"></img>
         </div>
     )
 }

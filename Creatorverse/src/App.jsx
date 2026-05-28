@@ -27,7 +27,7 @@ function App() {
     },
   ]);
 
-  return element;
+  return element
 }
 
 export default App

@@ -1,6 +1,6 @@
-import { supabase } from './client'
+import { supabase } from '../client'
 import { useState, useEffect } from 'react'
-import Card from './components/Card'
+import Card from '../components/Card'
 
 function ShowCreators() {
     const [creators, setCreators] = useState([]);
@@ -24,9 +24,23 @@ function ShowCreators() {
     return (
         <div>
             <h1>Creatorverse</h1>
-            {/* Creator cards will be displayed here */}
+            {
+                creators.length > 0 ? (
+                    creators.map((creator) => (
+                        <Card
+                            key={creator.id}
+                            name={creator.name}
+                            description={creator.description}
+                            url={creator.url}
+                            imageURL={creator.imageURL}
+                        />
+                    ))
+                ) : (
+                    <h2>No Creators Found</h2>
+                )
+            }
         </div>
-    );
+    )
 }
 
 export default ShowCreators
