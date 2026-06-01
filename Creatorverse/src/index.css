@@ -52,6 +52,7 @@
 
 body {
   margin: 0;
+  background-color:rgb(237, 240, 186)
 }
 
 #root {
@@ -108,4 +109,28 @@ code {
   line-height: 135%;
   padding: 4px 8px;
   background: var(--code-bg);
+}
+
+article{
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px auto;
+  max-width: 60%;
+}
+
+button, a{
+  margin-right: 8px;
+}
+
+header {
+  background-color:aliceblue;
+  padding-bottom: 20px;
+  background-image: url('./assets/globe.jpg');
+  background-size: cover;
+}
+
+header h1 {
+  color: white;
+  font-size: 48px;
 }

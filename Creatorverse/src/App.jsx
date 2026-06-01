@@ -1,4 +1,3 @@
-import './App.css'
 import { useRoutes } from 'react-router-dom'
 
 import ShowCreators from './pages/ShowCreators'
