@@ -4,7 +4,7 @@ Submitted by: **Eric Sierra**
 
 About this web app: **Creatorverse is an app where you can add, edit, and view your favorite content creators!**
 
-Time spent: **15** hours
+Time spent: **12-15** hours
 
 ## Required Features
 
